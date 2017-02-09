@@ -1,14 +1,14 @@
 //
-//  JLBAudioTool.h
-//  scanner
+//  ADAudioTool.h
+//  SystemSoundsPlay
 //
-//  Created by andehang on 16/4/5.
-//  Copyright © 2016年 zhongkefuchuang. All rights reserved.
+//  Created by andehang on 2017/2/9.
+//  Copyright © 2017年 andehang. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface JLBAudioTool : NSObject
+@interface ADAudioTool : NSObject
 
 /**
  播放音效

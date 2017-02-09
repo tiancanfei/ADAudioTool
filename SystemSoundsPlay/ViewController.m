@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "JLBAudioTool.h"
+#import "ADAudioTool.h"
 
 @interface ViewController ()
 
@@ -27,7 +27,7 @@
     [self.view endEditing:YES];
     UInt32 soundID = (UInt32)[self.soundIDTextField.text integerValue];
     NSLog(@"%zd",soundID);
-    [JLBAudioTool playSystemAudioWithSoundID:soundID];
+    [ADAudioTool playSystemAudioWithSoundID:soundID];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event

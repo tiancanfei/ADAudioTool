@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC25E23F1E4C1E950060705A /* ADAudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AC25E23E1E4C1E950060705A /* ADAudioTool.m */; };
 		AC27437F1D212BBD0084EE72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC27437E1D212BBD0084EE72 /* main.m */; };
 		AC2743821D212BBD0084EE72 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2743811D212BBD0084EE72 /* AppDelegate.m */; };
 		AC2743851D212BBD0084EE72 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2743841D212BBD0084EE72 /* ViewController.m */; };
@@ -15,7 +16,6 @@
 		AC27438D1D212BBD0084EE72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC27438B1D212BBD0084EE72 /* LaunchScreen.storyboard */; };
 		AC2743981D212BBD0084EE72 /* SystemSoundsPlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2743971D212BBD0084EE72 /* SystemSoundsPlayTests.m */; };
 		AC2743A31D212BBD0084EE72 /* SystemSoundsPlayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2743A21D212BBD0084EE72 /* SystemSoundsPlayUITests.m */; };
-		ACAAABA61D6A9D410057601B /* JLBAudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAAABA51D6A9D410057601B /* JLBAudioTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC25E23D1E4C1E950060705A /* ADAudioTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADAudioTool.h; sourceTree = "<group>"; };
+		AC25E23E1E4C1E950060705A /* ADAudioTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADAudioTool.m; sourceTree = "<group>"; };
 		AC27437A1D212BBD0084EE72 /* SystemSoundsPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SystemSoundsPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC27437E1D212BBD0084EE72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AC2743801D212BBD0084EE72 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,8 +54,6 @@
 		AC27439E1D212BBD0084EE72 /* SystemSoundsPlayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SystemSoundsPlayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC2743A21D212BBD0084EE72 /* SystemSoundsPlayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SystemSoundsPlayUITests.m; sourceTree = "<group>"; };
 		AC2743A41D212BBD0084EE72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACAAABA41D6A9D410057601B /* JLBAudioTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLBAudioTool.h; sourceTree = "<group>"; };
-		ACAAABA51D6A9D410057601B /* JLBAudioTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLBAudioTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +81,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC25E23C1E4C1E880060705A /* ADAudioTool */ = {
+			isa = PBXGroup;
+			children = (
+				AC25E23D1E4C1E950060705A /* ADAudioTool.h */,
+				AC25E23E1E4C1E950060705A /* ADAudioTool.m */,
+			);
+			path = ADAudioTool;
+			sourceTree = "<group>";
+		};
 		AC2743711D212BBD0084EE72 = {
 			isa = PBXGroup;
 			children = (
+				AC25E23C1E4C1E880060705A /* ADAudioTool */,
 				AC27437C1D212BBD0084EE72 /* SystemSoundsPlay */,
 				AC2743961D212BBD0084EE72 /* SystemSoundsPlayTests */,
 				AC2743A11D212BBD0084EE72 /* SystemSoundsPlayUITests */,
@@ -104,7 +114,6 @@
 		AC27437C1D212BBD0084EE72 /* SystemSoundsPlay */ = {
 			isa = PBXGroup;
 			children = (
-				ACAAABA31D6A9D410057601B /* JLBAudioTool */,
 				AC2743801D212BBD0084EE72 /* AppDelegate.h */,
 				AC2743811D212BBD0084EE72 /* AppDelegate.m */,
 				AC2743831D212BBD0084EE72 /* ViewController.h */,
@@ -142,15 +151,6 @@
 				AC2743A41D212BBD0084EE72 /* Info.plist */,
 			);
 			path = SystemSoundsPlayUITests;
-			sourceTree = "<group>";
-		};
-		ACAAABA31D6A9D410057601B /* JLBAudioTool */ = {
-			isa = PBXGroup;
-			children = (
-				ACAAABA41D6A9D410057601B /* JLBAudioTool.h */,
-				ACAAABA51D6A9D410057601B /* JLBAudioTool.m */,
-			);
-			path = JLBAudioTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,9 +284,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC2743851D212BBD0084EE72 /* ViewController.m in Sources */,
-				ACAAABA61D6A9D410057601B /* JLBAudioTool.m in Sources */,
 				AC2743821D212BBD0084EE72 /* AppDelegate.m in Sources */,
 				AC27437F1D212BBD0084EE72 /* main.m in Sources */,
+				AC25E23F1E4C1E950060705A /* ADAudioTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

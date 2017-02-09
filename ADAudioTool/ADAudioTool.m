@@ -1,19 +1,18 @@
 //
-//  JLBAudioTool.m
-//  scanner
+//  ADAudioTool.m
+//  SystemSoundsPlay
 //
-//  Created by andehang on 16/4/5.
-//  Copyright © 2016年 zhongkefuchuang. All rights reserved.
+//  Created by andehang on 2017/2/9.
+//  Copyright © 2017年 andehang. All rights reserved.
 //
 
-#import "JLBAudioTool.h"
+#import "ADAudioTool.h"
 #import <AVFoundation/AVFoundation.h>
 
 /**音效id字典*/
 static NSMutableDictionary *soundIDs;
 
-@implementation JLBAudioTool
-
+@implementation ADAudioTool
 
 + (void)playAudioWithUrl:(NSString *)urlString soundIDName:(NSString *)soundIDName
 {
@@ -56,7 +55,6 @@ static NSMutableDictionary *soundIDs;
     NSString *url = [documents stringByAppendingPathComponent:name];
     [self playAudioWithUrl:url soundIDName:name];
 }
-
 
 
 @end
