@@ -3,13 +3,9 @@ iOS的音频播放
 
 > 使用方法：
 
-`pod 'ADAudioTool', '~> 1.0.0'`
+    pod 'ADAudioTool', '~> 1.0.0'
 
-    /**
-     播放音效
-     urlString：音效路径
-     soundIDName：音效缓存key
-     */
+     播放音效，urlString：音效路径 soundIDName：音效缓存key
     + (void)playAudioWithUrl:(NSString *)urlString soundIDName:(NSString *)soundIDName;
 
 /**
