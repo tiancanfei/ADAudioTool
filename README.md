@@ -1,7 +1,7 @@
 # ADAudioTool
 iOS的音频播放
 
-使用方法：
+> 使用方法：
 
 pod 'ADAudioTool', '~> 1.0.0'
 
